@@ -5,7 +5,7 @@ date:   2020-08-27 12:40:45 -0700
 categories: git Senior-Design
 ---
 <html>
-<body style="background-color:#708090;>
+<body style="background-color:#C0C0C0";>
 
 Hello world! Welcome to my blog 0. This week I learned the ropes around my terminal and how to use it. I have a Windows 10 PC meaning that I don't have the ease of convince of having a linux based terminal natively. After some research, I found an Ubuntu terminal that works with Windows 10 and I learned how to use the commands. Installing Jekyll and Bundler was very frustrating. This was either due to the fact that most of the documentation online was Mac based meaning that some commands would not transfer over as easily on Windows 10. Another reason was that I would constantly run into errors that did not make sense to me logically resulting in a difficult time looking up the error, since I didn't understand what the error was! Aside from all that, I had a really fun time learning the command terminals. I am more of a GUI person but the terminal just look so much cooler and makes me feel more technical. I look forward to learning the tips and tricks to using the terminal commands. 
 
