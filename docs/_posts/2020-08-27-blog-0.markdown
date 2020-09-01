@@ -11,7 +11,8 @@ body {
  background-color:#C0C0C0;
 }
 html, body, h1, h2, h3, h4, h5, h6, p {
- color:black;
+"Comic Sans MS", cursive, sans-serif 
+color:black;
 }
 </style>
 
