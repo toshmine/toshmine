@@ -8,7 +8,7 @@ categories: git Senior-Design
 <style>
 
 body {
-background-image: url("https://wallpaperaccess.com/full/1151440.jpg"); 
+background-image: url("https://cdn.statically.io/img/wallpaperaccess.com/full/646162.jpg"); 
 background-color:#C0C0C0;
 }
 html, body, h1, h2, h3, h4, h5, h6, p {
