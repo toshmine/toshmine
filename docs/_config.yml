@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Zeeshan Sayed;'s blog site created for CIT 480! There will be weekly posts here briefly describing what I have learned or am currently learning. Join me in my journey of undergrad Computer Information Technology career!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://toshmine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Bird's Aren't Real
+twitter_username: birdsarentreali
 github_username:  toshmine
 
 # Build settings
