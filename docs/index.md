@@ -6,7 +6,7 @@ layout: home
 ---
 
 <html>
-<body style="background-color:black;">
+<body style="background-color:#708090;">
 
 <p style="color:white;"> </p>
 
