@@ -6,7 +6,8 @@ categories: git Senior-Design
 ---
 
 <html>
-<body style = "background-color:"black">
+<h2 style="background-color:black;color:white">
+</h2>
 
 </body>
 </html>
