@@ -13,7 +13,7 @@ background-color:#C0C0C0;
 }
 html, body, h1, h2, h3, h4, h5, h6, p {
 "Comic Sans MS", cursive, sans-serif 
-color:black;
+color:white;
 }
 </style>
 
