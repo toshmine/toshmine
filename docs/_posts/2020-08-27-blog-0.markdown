@@ -8,16 +8,16 @@ categories: git Senior-Design
 <style>
 
 body {
-background-image: url("http://hd.wallpaperswide.com/thumbs/star_wars_death_star-t2.jpg"); 
+background-image: url("https://wallpapersite.com/images/pages/pic_w/12292.jpg"); 
 background-color:#C0C0C0;
 }
 html, body, h1, h2, h3, h4, h5, h6, p {
 "Comic Sans MS", cursive, sans-serif 
 color:white;
 }
-</style>
 
 <body>
+</style>
 
 Hello world! Welcome to my blog 0. I am taking CIT 480 and COMP 484 simultaneously this semester. It sounds a little ambitious but I am for it! What's really cool is that the classes are similarly intertwined. For example, this week in my Comp 484 for class, we are learning the basics of HTML. That in turn, helps me make my CIT 480 blog assignment a bit more unique since I have a little HTML up my sleeve. 
 
