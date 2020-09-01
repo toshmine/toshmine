@@ -8,7 +8,7 @@ categories: git Senior-Design
 <style>
 
 body {
-background-image: url("https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); 
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); 
 background-size: cover;
 background-color:#C0C0C0;
 }
@@ -18,7 +18,7 @@ color:white;
 
 </style>
 
-Hello world! Welcome to my blog 0. I am taking CIT 480 and COMP 484 simultaneously this semester. It sounds a little ambitious but I am for it! What's really cool is that the classes are similarly intertwined. For example, this week in my Comp 484 for class, we are learning the basics of HTML. That in turn, helps me make my CIT 480 blog assignment a bit more unique since I have a little HTML up my sleeve. 
+<p> Hello world! Welcome to my blog 0. I am taking CIT 480 and COMP 484 simultaneously this semester. It sounds a little ambitious but I am for it! What's really cool is that the classes are similarly intertwined. For example, this week in my Comp 484 for class, we are learning the basics of HTML. That in turn, helps me make my CIT 480 blog assignment a bit more unique since I have a little HTML up my sleeve. 
 
 <br>
 <br>
@@ -29,6 +29,8 @@ This week I learned the ropes around my terminal and how to use it. I have a Win
 <br>
 
 Creating this blog post was a really fun yet challenging effort on its own. I like doing exactly what the prompt for the assignment is, but I also like doing a little extra. It makes me feel more in control of the assignment. I also think it helps with making my assignment stand out just a bit from the others. It’s pretty evident that there are a few things I changed from the basic layout. I learned that you can put HTML and a little bit of CSS to do what you imagine. What I mean by this is being able to put a static background color by making a body tag and then putting the hex value of the color in there. Also, by learning that, I had to learn how to change the font color to black to easily read the contents of the page. This is done by putting color:black; in the body of the text next to where the background color is.  
+
+</p>
 
 </body>
 </html> 
