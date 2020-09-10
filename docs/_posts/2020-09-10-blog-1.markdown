@@ -34,7 +34,7 @@ My friends and I did a little googling and one of my friends decided to just red
 
 <br><br>
 
-Finally, I asked the Slack chat what to do in hopes that I could find an answer and the professor gave us an extra command code, which was <b> “apt install php-xml” </b>, and it worked perfectly! Goes to show how sometimes the solution is that simple. Catch you next week :)
+Finally, I asked the Slack chat what to do in hopes that I could find an answer and the professor gave us an extra command code, which was <i> “apt install php-xml” </i>, and it worked perfectly! Goes to show how sometimes the solution is that simple. Catch you next week :)
 
 <br><br>
 
