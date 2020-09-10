@@ -18,16 +18,25 @@ color:white;
 
 </style>
 
-<p> Hello world! Welcome to my blog 0. I am taking CIT 480 and COMP 484 simultaneously this semester.
-<br>
-<br>
+<p> Hello once again world! Welcome to my blog 1. I am starting to get the hang of being back in school again. School in quarantine is getting hard to adjust to, but I am adjusting. This week in my CIT 480 class, we were assigned our first lab on Docker! I have used Docker once but not enough to say I know what it is or how to use it. The hardest part isn't the instructions or what is requested. The entire assignment is pretty easy on its own. The hardest part is figuring out how to solve an error that came out of nowhere. 
 
-This week I learned the ropes around my terminal and how to use it. 
+<br><br>
 
-<br>
-<br>
+Learning Docker was really fun and interesting! I have used VMBox before but that is just running a whole other OS inside my current machine. I didn't know that we could run a VM (or container) within Docker and do all the actions via the terminal. That's so cool to me! 
 
-Creating this blog post was a really fun yet challenging effort on its own. 
+<br><br>
+
+Throughout  the lab, I did not run into any issues. It was pretty straightforward and with every instruction the lab gave, it came with an explanation as to why this specific command works and what it does. It makes the assignment more interactive and informative. I did run into one issue towards the end of the assignment. I tried doing a “composer install” command and it gave me an error. I had thought if the entire assignment went so well, how and where could I have possibly messed up so make the final step give me an error reading “Your requirements could not be resolved to an installable set of packages” 
+
+<br><br>
+
+My friends and I did a little googling and one of my friends decided to just redo the whole lab again but more carefully to see where it could have possibly gone wrong. We walked them through the whole lab again and the same error persisted. Then one of us tried manually installing the “missing packages” and it still didn't work. It was a little concerning we got so far but couldn't figure out what the issue was. We were so close :(
+
+<br><br>
+
+Finally, I asked the Slack chat what to do in hopes that I could find an answer and the professor gave us an extra command code, which was “apt install php-xml”, and it worked perfectly! Goes to show how sometimes the solution is that simple. Catch you next week :)
+
+<br><br>
 
 </p>
 </html>
