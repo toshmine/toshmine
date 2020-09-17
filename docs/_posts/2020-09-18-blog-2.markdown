@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Blog 2"
+date:   2020-09-18 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<p> Hello world! Welcome back. This week has been a bit slower. I did learn some new material in my classes but it wasn't more of newer material, but more of expanding on previously learned material. One cool thing that I can remember is in my senior design class. I have always wanted to learn about Amazon Web Services (AWS). That is all the hype around IT right now and everywhere I look, there is always talk about AWS. I believe it was last summer, I was feeling very unproductive with my days and I wanted to try to learn / experiment with something new. I joined an Immersive Summer class that was being offered for free by CSUN’s METALab. It was a really fun experience because I got introduced to how real world IT work experience is! I did learn a little bit on how to set up EC 2 Instances and how to remote into them and etc. It was really fun being able to control a whole computer, or rather, instance all by the command line. 
+
+<br> <br>
+
+Due to the fact that I already had an account., I figured I should be good to go as soon as I log in again. When I made my account with METALab, I made sure to put my card information but also made sure that I was using only the free resources since I was just learning the ropes of Ansible and AWS and things like that. However, I guess after not using my requested services for so long, my account got suspended. It’s saying it’s suspended because I did not pay my fees on time, so I get a little concerned because as far as I know, I have no fees to pay since I have only used free instances. When I go to check my “bills”, it says I have no outstanding balances. So, I don't really know what's going on, but I put the request in to Amazon to take a look at my account and reactivate it so I can be good for my senior design class. 
+
+<br> <br>
+
+My professor is really helpful and she wants us to have a strong understanding of AWS. I am looking forward to learning more about what AWS has to offer and I am excited because it appears that after leaving this class, I will be able to have an AWS certification which can come in really clutch in post college life. 
+
+</p>
+</html>
+
