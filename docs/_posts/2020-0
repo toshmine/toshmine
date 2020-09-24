@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Blog 3"
+date:   2020-09-25 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <a href= "https://twitter.com/login?lang=en" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
+
+<p> Hello world! Welcome back, it’s nice to see you again. Another slow week but that's okay, I still practiced a good amount. One of my challenges this week was starting my project for my Comp 484 Web Design class. We have to design four HTML pages and use one CSS page to format our HTML pages. I have learned a little bit of HTML in my Comp 108 class, which is a class that is optional to take before taking Comp 110, which is Intro to Java programming.  
+
+<br> <br>
+
+I started my HTML pages and I first had to think about what I wanted it to be about. I decided to make it about my music production brand “Lucidity Worldwide”. I had to ask one of my good friends and classmate for help on how to start and do this assignment. He explained to me how CSS pages work and how to implement them into the code of my main page. It was just as simple as adding  <b> <i> link rel="stylesheet" href="Style.css" </i> </b> (Style.css being the name of the CSS code) into the section head of my code. 
+
+<br> <br>
+
+After I got the formatting down and to be consistent among all my pages, I wanted to make my supporting pages to have information and display them in a nice clean layout. I also learned how to make a table in HTML. In order to implement a table, you have to use <b> <i> table width="500" cellspacing="2" cellpadding="4" border="3" </i> </b>. Additionally, if you want to put a caption, or a title, on your table, you can do that by using  <b> <i> caption align="top"> Lucidity's Social Media </caption </i> </b>.
+
+<br> <br>
+
+There are a lot more things that I learned that make the overall appearances and page look presentable. I had a really challenging, yet fun time figuring out how to do this project. I am mostly done with the assignment, but if you are curious to see how it turned out, here is the link to see the project! <a href=https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html</a>. Yeah, I also leared how to make links clickable! 
+
+<br> <br>
+
+See you next week! 
+
+<br> <br>
+
+Also, click the Lucidity Worldwide picture on top and see what happens :)
+
+</p>
+</html>
+
