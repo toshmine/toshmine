@@ -18,21 +18,23 @@ color:white;
 
 </style>
 
-<center> <a href= "https://twitter.com/login?lang=en" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
+<center> <a href= “https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
+
+<br> <br>
 
 <p> Hello world! Welcome back, it’s nice to see you again. Another slow week but that's okay, I still practiced a good amount. One of my challenges this week was starting my project for my Comp 484 Web Design class. We have to design four HTML pages and use one CSS page to format our HTML pages. I have learned a little bit of HTML in my Comp 108 class, which is a class that is optional to take before taking Comp 110, which is Intro to Java programming.  
 
 <br> <br>
 
-I started my HTML pages and I first had to think about what I wanted it to be about. I decided to make it about my music production brand “Lucidity Worldwide”. I had to ask one of my good friends and classmate for help on how to start and do this assignment. He explained to me how CSS pages work and how to implement them into the code of my main page. It was just as simple as adding  <b> <i> link rel="stylesheet" href="Style.css" </i> </b> (Style.css being the name of the CSS code) into the section head of my code. 
+I started my HTML pages and I first had to think about what I wanted it to be about. I decided to make it about my music production brand “Lucidity Worldwide”. I had to ask one of my good friends and classmate for help on how to start and do this assignment. He explained to me how CSS pages work and how to implement them into the code of my main page. It was just as simple as adding  <b> <i> &lt;link rel="stylesheet" href="Style.css"&gt; </i> </b> (Style.css being the name of the CSS code) into the section head of my code. 
 
 <br> <br>
 
-After I got the formatting down and to be consistent among all my pages, I wanted to make my supporting pages to have information and display them in a nice clean layout. I also learned how to make a table in HTML. In order to implement a table, you have to use <b> <i> table width="500" cellspacing="2" cellpadding="4" border="3" </i> </b>. Additionally, if you want to put a caption, or a title, on your table, you can do that by using  <b> <i> caption align="top"> Lucidity's Social Media </caption </i> </b>.
+After I got the formatting down and to be consistent among all my pages, I wanted to make my supporting pages to have information and display them in a nice clean layout. I also learned how to make a table in HTML. In order to implement a table, you have to use <b> <i> &lt;table width="500" cellspacing="2" cellpadding="4" border="3"&gt; </i> </b>. Additionally, if you want to put a caption, or a title, on your table, you can do that by using  <b> <i> &lt;caption align="top"&gt; Lucidity's Social Media &lt;/caption&gt; </i> </b>.
 
 <br> <br>
 
-There are a lot more things that I learned that make the overall appearances and page look presentable. I had a really challenging, yet fun time figuring out how to do this project. I am mostly done with the assignment, but if you are curious to see how it turned out, here is the link to see the project! <a href=https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html</a>. Yeah, I also leared how to make links clickable! 
+There are a lot more things that I learned that make the overall appearances and page look presentable. I had a really challenging, yet fun time figuring out how to do this project. I am mostly done with the assignment, but if you are curious to see how it turned out, here is the <a href=https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html>hyperlink</a> to see the project! 
 
 <br> <br>
 
