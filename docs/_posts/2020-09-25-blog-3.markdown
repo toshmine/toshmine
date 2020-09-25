@@ -1,5 +1,13 @@
+---
+layout: post
+title:  "Blog 3"
+date:   2020-09-25 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
 
-dy {
+body {
 background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
 background-size: cover;
 background-color:#C0C0C0;
