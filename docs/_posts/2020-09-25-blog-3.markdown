@@ -18,10 +18,7 @@ color:white;
 
 </style>
 
-<center> 
-  <a href="https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html" draggable="false" target="_blank">
-    <img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900">  </a>
-  </center> 
+<center> <a href= “https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
 
 <br> <br>
 
@@ -49,3 +46,4 @@ Also, click the Lucidity Worldwide picture on top and see what happens :)
 
 </p>
 </html>
+
