@@ -18,7 +18,7 @@ color:white;
 
 </style>
 
-<center> <a href= “https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
+<center> <a href= "https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html" draggable="false" target="_blank"><img src="https://i.imgur.com/Qq7cejw.jpg" draggable="false" height="500" width="900"> </a> </center> 
 
 <br> <br>
 
@@ -34,7 +34,7 @@ After I got the formatting down and to be consistent among all my pages, I wante
 
 <br> <br>
 
-There are a lot more things that I learned that make the overall appearances and page look presentable. I had a really challenging, yet fun time figuring out how to do this project. I am mostly done with the assignment, but if you are curious to see how it turned out, here is the <a href=https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html>hyperlink</a> to see the project! 
+There are a lot more things that I learned that make the overall appearances and page look presentable. I had a really challenging, yet fun time figuring out how to do this project. I am mostly done with the assignment, but if you are curious to see how it turned out, here is the <a href="https://lucidity-project-one.glitch.me/Lucidity%20Homepage.html">hyperlink</a> to see the project! 
 
 <br> <br>
 
