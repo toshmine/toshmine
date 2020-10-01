@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Blog 4"
+date:   2020-10-02 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <img src="https://www12.lunapic.com/do-not-link-here-use-hosting-instead/160157845843255721?9332209352" draggable="false" height="500" width="900"> </center> 
+
+<br> <br>
+
+<p> Hello world! Welcome back, it’s nice to see you again. This week I did learn a good amount in my classes, however I really liked learning about Ansible. I touched briefly about Ansible when I was in CSUNMetalab, so I have a little bit of knowledge about it. 
+
+<p> Ansible allows you to make a document called a “playbook” which allows the user to code in some commands to install things such as packages and etc into one document. It’s really cool because let's say that a person setting up multiple computers and all the computers have to have the same programs and function all the same. Rather than having to manually install all the programs individually on each computer, the user can just make an Ansible playbook and run the playbook on each computer. 
+<p> There is not much that is hard to pick up on Ansible. Yes, of course there are going to be syntax that will be needed to look up and understand, but for the most part, once the syntax is understood, it’s just a matter of making the commands. 
+
+<p> I am looking forward to using Ansible and seeing all that can be done with it! There might be a lab soon, and I am excited to relearn Ansible! 
+
+<p> That’s all folks! Tune in next week :)
+
+<br> <br>
+
+</p>
+</html>
+
