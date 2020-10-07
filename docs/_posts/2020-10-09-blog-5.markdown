@@ -1,0 +1,43 @@
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <img src="https://cdn.gosquared.com/blog/wp-content/uploads/2020/03/20_03_04_AWSCloud_OG_01@2x.png" draggable="false" height="500" width="900"> </center> 
+
+<br> <br>
+
+<p> Hello world! Welcome back, it’s nice to see you again. This week I learned a lot of information. I am still digesting everything and trying to fully understand all the concepts that I’ve learned. One thing that I am very excited to learn more about and work with is Amazon Web Services. 
+
+<br><br>
+
+<p> Amazon Web Services (AWS) is basically cloud computing. What is cloud computing and why is it used. Well, in order to understand that, you have to understand the different types of cloud computing and what the advantages are. According to Amazon, &quot;Cloud computing is the on-demand delivery of compute power, database, storage, applications, and other IT resources via the internet with pay-as-you-go pricing.&quot;  In other words, I would say to think of cloud computing as being able to use a computer that is strictly made for storage or running big labor intensive programs on a machine that you personally don't own. Essentially, using someone else's computer, one that is a lot more powerful and etc resources, and however much power / resource you use, is how much you pay.  
+
+<br> <br>
+
+<p> The six advantages to cloud computing are: 
+<ol>
+<li> You save money by not having to &quot;rent&quot; a database server. If you &quot;rent&quot; a database center, you are paying for all the capacity even if you only use a small portion of it. </li>
+<li> You pay for only how much capacity  you use. </li>
+<li> You don't have to guess how much power you really need. You wouldn't have to underestimate or overestimate how much server capacity you need since you can just allocate more capacity as you go rather than buying more physical server capacity and not using it. </li>
+<li>It will always be best optimized since new resources and tools are only a click away. So a new resource can be implemented in minutes by a few clicks.</li>
+<li>Costs to keep the computer database or maintaining the server room are cut since it’s online on the cloud.</li>
+<li>Since this is all being done online, you can go global in a matter of minutes! It is so much easier to deploy your services when your services are already on the cloud. </li>
+</ol>
+
+<p> That’s all folks! Tune in next week :)
+
+<br> <br>
+
+</p>
+</html>
+
