@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Blog 6"
+date:   2020-10-16 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <img src="https://www.invoke.cloud/img/blog/ec2_image.jpeg" draggable="false" height="500" width="900"> </center> 
+
+<br> <br>
+
+<p> Hello world! Welcome back, it’s nice to see you again. I have been learning a lot about Amazon Web Services (AWS) and something that is always talked about is an EC2 Instance. It’s one of the most popular services that Amazon offers. So, what is an EC2 Instance and why is it so sought after and talked about? 
+
+<br><br>
+
+<p> Let’s first define what <i> EC2</i> stands for. It translates to <b>E</b>lastic <b>C</b>ompute <b>C</b>loud. It is a computing platform that is done all virtually in the cloud and it enables business partners to run labor intensive programs on a computer that is locally owned. It is literally an infinite array of virtual machines available to rent out for however long needed. If you are curious as to why this would be beneficial, check out my blog five where I talk about what the advantages are to cloud computing. 
+
+<br><br>
+
+<p> As mentioned above, a user can reserve a specific EC2 instance. There are different types of EC2 Instances types that can be reserved. 
+
+<ol>
+<li> <b> t2 Instance Type:</b> Basic CPU and memory usage that is best used to run programs that don't run that often. </li>
+<li> <b>m5 Instance Type:</b> Essentially a bigger and faster version of a t2 instance. </li>
+<li> <b>c5 Instance Type:</b> CPU is more powerful with the balance of less memory. It’s best used for items such as scientific modeling or machine learning. </li>
+<li> <b>r4 Instance Type:</b> RAM is more powerful with the balance of a less powerful CPU. It’s best used to structure large inputs of real time big data, since data is constantly being altered and interpreted. </li>
+<li> <b>p3 Instance Type:</b> Powerful GPU. It is best used for video editing and such.</li>
+<li> <b>h1 Instance Type:</b> Storage optimized. This is hard disk drive (HDD) based. It is best used to store file systems, network file systems, etc. </li>
+<li> <b>i3 Instance Type:</b> Similar to the h1 instance type but is Solid State Drives (SSD) based. It is best used for SQLDatabases and in-memory databases. </li>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+<br> <br>
+
+</html>
+
