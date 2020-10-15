@@ -41,6 +41,8 @@ color:white;
 <li> <b>h1 Instance Type:</b> Storage optimized. This is hard disk drive (HDD) based. It is best used to store file systems, network file systems, etc. </li>
 <li> <b>i3 Instance Type:</b> Similar to the h1 instance type but is Solid State Drives (SSD) based. It is best used for SQLDatabases and in-memory databases. </li>
 
+<br><br>
+
 <p> That’s all folks! Tune in next week :) </p>
 
 <br> <br>
