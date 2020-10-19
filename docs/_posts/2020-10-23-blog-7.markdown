@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Blog 6"
+date:   2020-10-23 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <img src="https://www.joc.com/sites/default/files/field_feature_image/prime%20containers%20header%20fixed%20%281%29.png" draggable="false" height="500" width="900"> </center> 
+
+<br> <br>
+
+<p> Hello world! Welcome back, it’s nice to see you again. This week I really liked learning about what a container is and what it's used for. No, not the kind in the picture. That’s just a transport container. I mean the one that is used in Web Services. Containers are essentially a form or method of using a virtual operating system. It is not a full machine, but more of a machine that has the bare amount of resources needed to run a service needed. </p>
+
+<br> <br>
+
+<p> They are really beneficial due to the fact that they are repeatable. They also have the same work environment because the application’s code and configurations are made into individual self contained executables in the environment. Also, they make that when a user wants to deploy their programs, that the program gets deployed as quickly and efficiently as possible. </p>
+<p> Due to the fact that container images are so small, it doesn't require as many resources to create one. Meaning that container images can be made a lot faster than virtual machines. 
+Docker is used to make use of making containers. Docker is a program that allows the user to build, test, run, stop and launch applications quickly to see how it works. It is already automatically installed in containers. Containers can also be known as a Docker Image.</p>
+
+<br> <br>
+
+<p> Virtual Machines run on a hypervisor. Containers run on any OS as long as it has the right kernel that supports Docker’s software. Let's say you have a computer and you want the computer to do TaskA, TaskB, and TaskC at one given time. What seems more efficient? </p>
+
+<ol type="A">
+<li> <b> Option 1: </b> Having three virtual machines, each one running its own task. Virtual Machine 1 running TaskA; Virtual Machine 2 running TaskB; Virtual Machine 3 running TaskC. Each of the virtual machines has its own guest OS and login. </li>
+<li> <b> Option 2: </b> Having one virtual machine with three containers running its each task. Container 1 running TaskA; Container 2 running TaskB; Container 3 running TaskC. Since you are running this in one virtual machine, there is only one OS with one login. </li>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+<br> <br>
+
+</html> 
