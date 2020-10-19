@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 6"
+title:  "Blog 7"
 date:   2020-10-23 09:09:09 -0700
 categories: git Senior-Design
 ---
@@ -38,8 +38,11 @@ Docker is used to make use of making containers. Docker is a program that allows
 <li> <b> Option 1: </b> Having three virtual machines, each one running its own task. Virtual Machine 1 running TaskA; Virtual Machine 2 running TaskB; Virtual Machine 3 running TaskC. Each of the virtual machines has its own guest OS and login. </li>
 <li> <b> Option 2: </b> Having one virtual machine with three containers running its each task. Container 1 running TaskA; Container 2 running TaskB; Container 3 running TaskC. Since you are running this in one virtual machine, there is only one OS with one login. </li>
 
+<br><br>
+
 <p> That’s all folks! Tune in next week :) </p>
 
 <br> <br>
+
 
 </html> 
