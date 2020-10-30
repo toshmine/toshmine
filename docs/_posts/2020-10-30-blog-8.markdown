@@ -48,7 +48,7 @@ color:white;
   <dt> DynamoDB </dt>
   <dd>
     <ol type="A">
-<li> Has no hiccups or inconsistencies when needing to scale. No affect on how efficient the database is. Closely relatable to RDS.
+<li> Has no hiccups or inconsistencies when needing to scale. No affect on how efficient the database is. Closely relatable to RDS. </li>
 <li> Does not need any maintenance. </li>
 <li> Limitless Storage. </li>
     </ol>
