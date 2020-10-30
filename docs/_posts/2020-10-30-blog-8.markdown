@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Blog 8"
+date:   2020-10-30 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<center> <img src="https://cloudacademy.com/wp-content/uploads/2015/07/Asset-36.png" draggable="false" height="500" width="900"> </center> 
+
+<br> <br>
+
+  <p> Hello world! Welcome back, it’s nice to see you again. This week I was running through my Amazon Web Services (AWS) Cloud Foundations assignments and I am learning a lot. Most recently I learned about the multiple Database solutions that are offered. A database is exactly what it sounds like it is. It stores values to other values making them easy to sort out in a big list of information. The library would have a database that is able to categorize descriptors such as, genre, author, name, etc. There are four main database solutions: Relational Database Service (RDS), Amazon Redshift, DynamoDB, and Aurora. </p>
+
+<dl>
+  
+  
+<dt>Relational Database Service (RDS)</dt>
+  <dd>
+    <ol type="A">
+<li>Due to its simplicity, it is very easy to scale up or down. Amazon also has a function in the console that allows it to auto-scale. </li>
+<li>WIll be maintained by AWS. The users have the option to postpone updates.</li>
+<li>Maximum storage is 64 terabytes. </li>
+          </ol>
+  </dd>
+
+  <dt> Amazon Redshift </dt>
+    <dd>
+      <ol type="A">
+<li> Has a slightly more complex infrastructure. Allows for more variables and detailed information. However, scaling up or down takes a long time given its complexity. It can be resized a bit faster using <a href="https://aws.amazon.com/about-aws/whats-new/2018/11/amazon-redshift-elastic-resize/">Elastic Resize</a>, but isn't as efficient as RDS. </li>
+<li> Users have to actively make sure that there is no cell being unused and if there is, it must be deleted for storage purposes. </li>
+<li> Maximum storage is 2 petabytes. </li>
+      </ol>
+  </dd>
+
+  <dt> DynamoDB </dt>
+  <dd>
+    <ol type="A">
+<li> Has no hiccups or inconsistencies when needing to scale. No affect on how efficient the database is. Closely relatable to RDS.
+<li> Does not need any maintenance. </li>
+<li> Limitless Storage. </li>
+    </ol>
+  </dd>
+ 
+<dt>Aurora</dt>
+  <dd>
+    <ol type="A">
+<li>Depends on what Aurora is running on. If it is run on RDS, it is scaled in the same way that RDS is. If it is run on Aurora Serverless, it can automatically start, scale up, scale down, and shut down depending on what the system thinks the application needs.  </li>
+<li>Maintenance works the same way with RDS. When using Aurora Serverless, no maintenance is needed.  </li>
+<li>Maximum storage is 64 terabytes using RDS.  </li>
+    </ol>
+  </dd>
+
+</dl>
+  
+  <p> That’s all folks! Tune in next week :) </p>
+  
+<br> <br>
+
+</html> 
+
