@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Blog 9"
+date:   2020-11-6 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to SSH into an EC2 Instance on a Windows machine </h1>
+
+<center> <img src="https://hackernoon.com/hn-images/0*1lpn80SLAPxc3bZv." draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+ <p> Hello world! Welcome back, it’s nice to see you again. This week I am working on my CIT 480 Lab assignment. The assignment is to successfully create and deploy an Amazon EC2 Instance with an S3 Bucket (Another form of external storage) attached and be able to view the website on any device with a link.  I have seen a lot of videos explaining how to create an instance and what settings to configure, so going in, I am pretty confident I know how to do it. I was able to create the instance and have it running. I tried to SSH into the instance but I wasn't able to find any helpful guides on how to do so on a Windows computer. I was sent a guide that worked but it was a little hard to follow, so here is the updated Windows method. </p>
+
+<br> 
+
+<p> When you create your EC2 instance, Amazon actually asks you to create a key pair (.pem) or use a preexisting one. This .pem will is essentially a private code to enter the instance. Once the .pem key is in your downloads, you're pretty much set on creating your instance. Next step is to remote / ssh into it to gain control of it. Download 
+<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank">PuTTY</a> and make sure to install it into a folder or repository where it is easily findable. I have mine on my desktop so I know exactly where all the files are located.</p>
+
+<br> 
+
+  <ol type="1">
+    
+    <li> <p> Once you have <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank">PuTTY</a> installed, open the repository and find the program called PuTTYgen and run it. It should look something like this. Make sure to take note of the Parameters settings as well. It should be defaulted but if not, copy them as they are. </p> <img src="https://i.imgur.com/Rcbh0Ac.png" draggable="false">  </li>
+
+<br> <br>
+
+    <li> <p> On the “Actions” section, click on Load. </p> <img src="https://i.imgur.com/M7KDvcT.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> It's going to open an explorer page and change the file tupe to "All Files". Then locate the .pem key. </p> <img src="https://i.imgur.com/rnJdjiH.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> You will then recieve a notice that the key has been successfully imported.  </p> <img src="https://i.imgur.com/LtPYsLT.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> Since the .pem has been added, you want to go ahead and save the .pem key. Since a .pem key is a private key, click on "Save private key". Save the new file in the same place you have your oirginal .pem key for  </p> <img src="https://i.imgur.com/74AtlJV.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> Since the .pem has been added, you want to go ahead and save the .pem key. Since a .pem key is a private key, click on "Save private key". PuTTY has converted your .pem file into a readable .ppk file. Save this file in the same place with your orignal .pem key for consistency.  </p> <img src="https://i.imgur.com/74AtlJV.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/cqMmp9R.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> Locate the EC2 Instance Host Name. On the AWS Console, find the EC2 Instance and ensure that it is running. Then click connect. Once in the connect page, grab the section highlighed in the picture and copy it to your clipboard. Then paste it onto the Host Name in PuTTY.</p> <img src="https://i.imgur.com/tDL9qJ0.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/4HsiTH3.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/rcN42gA.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p> Once done, on the left side, expand "Connection", expand "SSH", then CLICK (not expand) on "Auth". Then click on browse and select the .ppk file. </p> <img src="https://i.imgur.com/IWj2Iig.png" draggable="false"> </li>
+    
+    <br> <br>
+
+    <li> <p> Press okay and wait for PuTTY to launch you in! </p> </li>
+
+  </ol>
+
+<br> 
+
+<p> That’s all folks! Tune in next week :) </p>
+  
+<br> <br>
+
+</html> 
+
