@@ -1,0 +1,123 @@
+---
+layout: post
+title:  "Blog 10"
+date:   2020-11-13 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to implement Alertify JS in your Javascript Website</h1>
+
+<center> <img src="https://www.devopsschool.com/blog/wp-content/uploads/2020/05/alertyfy-1-740x414.png" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p> Hello world! Welcome back, it’s nice to see you again. This week I was reviewing my code for my Comp484 Web Engineering class. I had to create a virtual Giga Pet, commonly known as a Tamagotchi, using HTML, CSS, and Javascript. It was a very fun assignment I was tasked to do. Each button had to do something with the virtual pet. </p>
+
+<p>For my virtual pet, I decided to do it on Chewbaca from Star Wars. There are four buttons to choose from and each button has a respective response that will either increase or decrease a value attaining to characteristics of the pet. Click <a href="https://giga-pet-project-two.glitch.me/" target="_blank">here </a>if you are interested in seeing the final product! For example, everytime you give Chewbaca a treat, his happiness goes and his weight increases. However, if you make Chewbaca exercise, he hates it, so his happiness goes down but his weight and IQ increases! </p>
+
+<p>If you have viewed the project, you may have noticed that your web browser gives you alerts. Another extra bonus I added into my project was making extra alerts thats say which characteristic has increased or decreased. To find out how to do this, click <a href="#Sliders">here </a> to jump to that part of the tutorial. I found this off of a list of various Javascript Alert Frameworks found <a href="https://ourcodeworld.com/articles/read/52/top-10-best-notification-libraries-and-plugins-for-javascript-and-jquery" target="_blank">here.</a></p>
+
+<p> The project uses a JavaScript alert system called <a href="https://alertifyjs.com/" target="_blank">“Alertify”</a></p> . Here is a step by step guide on how I implemented this. </p>
+
+ <ol type="1">
+    
+    <li> <p> Open up the Alertify website and take a look around. Sample the examples they have posted to see how certain alerts behave and how they will look. </p> <img src="https://i.imgur.com/mPgGch0.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/BYykdQ4.png" draggable="false"></li>
+
+<br> <br>
+
+    <li> <p>Once you’re done browsing and are set that this is the Framework Alert that you want to decide on, scroll to the top and click on “Getting Started”. </p> <img src="https://i.imgur.com/bxXsdww.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>There are multiple ways to implement a JavaScript Alert type. For instance, you can download the library and keep it on your host machine. However, we want to be able to put some lines of code into our project and have it work universally so every machine it is displayed on does not have to download a whole library just to view your website. So, ignore the fields in the highlighted yellow box.</p> <img src="https://i.imgur.com/0wuaFvJ.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Scroll down till you see “AlertifyJS CDN” and copy everything in the box.</p> <img src="https://i.imgur.com/aeakXuS.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Go back to your project and paste your copied code in the head section of your HTML code. I have pasted mine above my href css line. </p> <img src="https://i.imgur.com/dJ2z40l.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Once that is there, you are pretty much all set! Now all that is left is to actually implement the alerts into your Javascript code so it is responsive! Naviagte to your .js file.</p> </li>
+
+<br> <br>
+
+    <li> <p>The picture below is the code as to what happens when you make Chewie exercise. </p> <img src="https://i.imgur.com/6fcKGwI.png" draggable="false"> <br> <br> 
+
+<br> <br>
+
+    <li> <p> I wanted just a confirmation popup saying that the button has been clicked. So I went back to the Alertify main page to refer to the sample they use and how to implement them. </p> <img src="https://i.imgur.com/JtN4Kbf.png" draggable="false"> </li>
+
+<br> <br>
+
+<li> <p> Using “alertify.alert('Z Z Z Z', 'S S S S');” allows the code to create a popup when the button is clicked. Replace the Z with what you would like the popup message to say and replace the S with what you want the content of the popup to be. </p> <img src="https://i.imgur.com/OkFvwQ3.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/05Khup1.png" draggable="false"></li>
+    
+    <br> <br>
+
+    <li> <p>You are done with implementing the popups! </p> </li>
+
+  </ol>
+
+<p> That’s all folks!... or is it? </p>
+
+
+<br> <br>
+
+<div id="Sliders">
+  
+  <p>I did a little bit extra to make my project have a little more pizzazz by adding notification sliders that come in and out. Follow the steps below on how to implement the sliding notifications. </p>
+
+ <ol type="1">
+    
+    <li> <p> Go to the section of code you want to implement the notifications on. </p><img src="https://i.imgur.com/6fcKGwI.png" draggable="false"> </p> </li>
+    
+    <br> <br>
+      
+      <li> <p> Go back to the <a href="https://alertifyjs.com/" target="_blank">“Alertify”</a> website, and scroll down to the “Default Notifications” section. </p> <img src="https://i.imgur.com/ofCcERk.png" draggable="false"> </li>
+    
+    <br> <br>
+
+   <li> <p> Sample the notifications types and decide which one you would like to implement. In my project, I wanted the good characteristics notifications to be positive (success) while the bad characteristics to be negative (error). </p> <img src="https://i.imgur.com/coW7hvM.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/TWNWRNr.png" draggable="false"> </li>
+
+<br> <br>
+
+ <li> <p> Paste the corresponding code below the alert notification code and implement what you would like the alert to say! </p> <img src="https://i.imgur.com/VA3ymAi.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/BPb4NAs.png" draggable="false"></li>
+
+<br> <br>
+   
+   <li> <p> You can also add multiple sliding notifactions and it'll just stack on top of each other! </p><img src="https://i.imgur.com/Cx4xSxl.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/ozpd5qx.png" draggable="false"></li>
+   
+   <br><br>
+
+ <li> <p> Do that for the rest of your project and you are done! </p> </li>
+
+  </ol>
+  
+</div>
+
+
+<br> 
+
+<p> That’s all folks! For real. Tune in next week :) </p>
+  
+<br> <br>
+
+</html> 
+
+
