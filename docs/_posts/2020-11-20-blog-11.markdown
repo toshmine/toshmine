@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Blog 11"
+date:   2020-11-20 09:09:09 -0700
+categories: git Senior-Design
+---
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to SSH into an EC2 Instance on a Windows machine using MobaXTerm</h1>
+
+<center> <img src="https://i.imgur.com/y1xbKYD.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+ <p> Hello world! Welcome back, it’s nice to see you again. I went to test the waters of using AWS and creating EC2 Instances. I was successfully able to launch another instance. My previous blog, Blog 9, showcased how to get control (SSH) into the instance. I have found another way, which is actually a bit easier and more straightforward than using PuTTY.  </p>
+
+<p> When you create your EC2 instance, Amazon actually asks you to create a key pair (.pem) or use a pre existing one. This .pem will is essentially a private code to enter the instance. Once the .pem key is in your downloads, you're pretty much set on creating your instance. Next step is to remote / ssh into it to gain control of it. </p>
+
+<p> Today, we will be using a program called “MobaXterm”. This personally was the first terminal I started learning! I got introduced to it in my CIT160  Internet Technologies class. Download 
+<a href="https://mobaxterm.mobatek.net/download-home-edition.html" target="_blank">MobaXterm</a> and make sure to install it into a folder or repository where it is easily findable. I have mine on my desktop so I know exactly where all the files are located.</p>
+
+
+ <ol type="1">
+    
+    <li> <p>Create and configure your EC2 instance. Once that is done, ensure that the EC2 instance is running. Then click connect. Once in the connect page, grab the section highlighted in the picture and copy it to your clipboard.  </p> <img src="https://i.imgur.com/0RxhsUF.png" draggable="false"> <br><br> <img src="https://i.imgur.com/TMTdN3Z.png" draggable="false">  </li>
+
+<br> <br>
+
+    <li> <p>Once you open up MobaXterm, you will be greeted with the screenshot below. Ignore the black boxes. That was a previous test run.</p> <img src="https://i.imgur.com/mXEsbb4.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Click on New Session</p> <img src="https://i.imgur.com/LQ62rX3.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Then you will be greeted with the Session Settings menu. SSH should be selected by default. Paste the Public DNS address in the Remote host section. Select Specifiy Username and input "ubuntu". The port should default to port 22 but if not, go ahead and edit it. </p> <img src="https://i.imgur.com/hFaCMo1.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/TMTdN3Z.png" draggable="false"> </li>
+   
+   <br> <br>
+   
+   <li> <p>Click on Advanced SSH Settings. Select "Use Private Key". When you do that, it should open this file looking item at the end of the text entry box. You can either put the file path of the .pem key in there, or you can click the file button and naviagte to the .pem key. </p> <img src="https://i.imgur.com/p4uRHnB.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/0KUKbDF.png" draggable="false"> </li>
+   
+    <br> <br>
+
+    <li> <p> Press OK and wait for MobaXterm to launch you in! </p> </li>
+
+  </ol>
+
+<br> 
+
+<p> That’s all folks! Tune in next week :) </p>
+  
+<br> <br>
+
+</html> 
+
+<br> <br>
+
