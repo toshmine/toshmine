@@ -1,0 +1,265 @@
+---
+layout: post
+title:  "Blog 12"
+date:   2020-12-04 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to launch your HTML project on Amazon Web Services!</h1>
+
+<center> <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/08/26104125/Blog-Featured-image-AWS-EC2-Aug.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+  <p> Hello world! Welcome back, it’s nice to see you again. For the last couple of blogs, I have been talking about what I am currently doing in my classes. For <a href="https://toshmine.github.io/git/senior-design/2020/11/06/blog-9.html" target="_blank">Blog 9, </a> I talked about how to security SSH into an existing Amazon Web Services EC2 Instance on a Windows machine using PuTTY. For <a href="https://toshmine.github.io/git/senior-design/2020/11/13/blog-10.html" target="_blank">Blog 10, </a> 
+I talked about a project that I was working on in HTML and how to implement an aleat. For <a href="https://toshmine.github.io/git/senior-design/2020/11/20/blog-11.html" target="_blank">Blog 11, </a> I talked about an easier way to SSH into an existing Amazon Web Services EC2 Instance on a Windows machine using MobaXterm. For this blog, I would like to teach you how to get your HTML project launched into an AWS EC2 instance and make it widely accessible! </p> 
+  
+  <br> 
+  
+ <p>I will be starting from the very beginning so this might be quite lengthy. There are 44 steps so please feel free to skip the steps that you already have done or know how to do. </p>
+  
+  <br>
+  
+  <h3> <a href="#Prereq"> Prerequisite (Set Up) </a> </h3>
+  <h3> <a href="#S3"> Creating a S3 Bucket </a> </h3>
+  <h3> <a href="#EC2"> Creating an EC2 Instance </a> </h3>
+  <h3> <a href="#SSHEC2"> SSH into the EC2 Instance </a> </h3>
+  <h3> <a href="#UpEC2"> Update EC2 + Install Apache2 </a> </h3>
+  <h3> <a href="#Launch"> Launching the HTML project into the EC2 Machine </a> </h3>
+  
+  <br>
+      
+  <h2 div id="Prereq"> Prerequisite (Set Up) </h2>
+  
+<ol type="1">
+    
+    <li> <p> Have your HTML project downloaded, along with all the css and files, locally on your host computer. I wanted to launch my Gigapet project onto AWS so I downloaded the files and I saved them in a folder on my desktop. </p> <img src="https://i.imgur.com/ShVOS7B.png" draggable="false"> <br><br> <img src="https://i.imgur.com/M92oUnQ.png" draggable="false">  </li>
+
+<br> <br>
+  
+  <li> <p> Once you have your project files in one folder, compress the files in there into a zip folder. This can easily be done by right clicking on the folder and clicking on "Send to" then click in "Compressed (zipped) Folder." After doing so, a new folder with a zipper on it will show up under the same name. </p> <img src="https://i.imgur.com/n1PBID4.png" draggable="false"> <br><br> <img src="https://i.imgur.com/NmUbAwM.png" draggable="false">  </li>
+
+<br> <br>
+  
+  <li> <p> Next, we need to create a S3 bucket to store / host our file. </p> </li>
+  
+  <br> <br>
+  
+  <h2 div id="S3"> Creating a S3 Bucket </h2>
+  
+<ol type="1">
+  
+  <li> <p>Navigate to the AWS Management Console and log in. Once logged in, click services, under Storage, click S3. It is known as a S3 bucket. All it really does is store whatever files you want on there but on the AWS Cloud. So we will be storing our Gigapet project files in this S3 bucket so it is in the AWS Cloud storage and can be referred back to later on. </p> <img src="https://i.imgur.com/oUeyy6u.png" draggable="false"> </li>
+    
+    <br><br> 
+    
+  <li> <p>Once in the module, click on "Create Bucket". I already have an existing bucket so my bucket count is at 1 but that won't matter since we're making a whole new unrelated bucket. </p> <img src="https://i.imgur.com/ZzZmcHl.png" draggable="false"> </li>
+  
+  <br> <br>
+
+  <li> <p>After clicking on "Create Bucket", AWS will send you to the bucket creation page. Create a name for your bucket. 
+    
+    <br> <br>
+    Buckets are globally shared. Therefore, your bucket name has to be super uniqr that no one else could possibly have it. I would recommend adding something like a signature that is uniquely yours. For example, I would name the bucket however I would like, but I would add maybe something like the last four digits of my school ID number since that is uniquely mine.
+    <br> <br>
+    
+    Also, take note of the region we are making your bucket in. In my case, it is being made in US West (N. Califormia) us-west-1. After doing so, leave everything as is and click on "Create Bucket". If all goes well, you should get confirmation that it's been created! </p> <img src="https://i.imgur.com/pstm0mu.png" draggable="false"> <br><br> <img src="https://i.imgur.com/9DjA4KM.png" draggable="false"> <br><br> <img src="https://i.imgur.com/oB2CeRQ.png" draggable="false"> </li>
+  
+  <br><br> 
+    
+  <li> <p>Once our bucket has been created, click on it. Once in the bucket, navigate to objects. It should say 0 since there is nothing in the bucket and it is empty. We want to upload our HTML project (Gigapet HTML Project) in there. Click on "Upload". Then, AWS will ask you what you want to upload. Click on "Add Files". Then a pop up should appear and make sure to select the zipped (.zip) file. After that, scroll down a little bit and click "Upload". </p> <img src="https://i.imgur.com/p1LRE7W.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/HmMR0H7.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/VmTOnUS.png" draggable="false"> </li>
+  
+    <br><br> 
+    
+  <li> <p> Now, we will want to make the file in the bucket public. However, before you do that, we have to alter the permissions of the actual bucket to allow public access. To do this, navigate to the "Permissions" tab. Once in the permission tab, click "Edit" which is located under "Block public access (bucket settings)". After clicking "Edit", it will bring you to a new page where we need to deselect "Block all public access" to make it public. After that, click save changes. It will then ask us to confirm, to where we just type the word "confirm" in the text box. After that, check the bucket settings and see if they have updated. </p> <img src="https://i.imgur.com/PuMoti0.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/XD3aPpw.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/eTPpM8f.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/Sq7iHdv.png" draggable="false"> </li>
+    
+   <br><br> 
+    
+  <li> <p> We have made the bucket public, navigate back to the "Objects" tab. We want to make the file in the bucket public. So click the box next to the file, click on "Actions", scroll a bit on the drop down menu and select "Make Public". Then, it will ask to confirm, and click "Make Public". We should then get a confirmation message saying that it has been made public. </p> <img src="https://i.imgur.com/xR9IYVR.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/niyyP5T.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/3Vdmk89.png" draggable="false"> </li>
+  
+  <br><br> 
+    
+  <li> <p>We can check if the object is public by clicking the box next to the file, clicking in "actions" and selecting "Open". If it starts downloading on our machine, we are good to go! </p> <img src="https://i.imgur.com/g5lJ0BY.png" draggable="false"> </li>
+  
+  <br><br> 
+  
+  </ol>
+  
+<br> <br>
+  
+  <h2 div id="EC2"> Creating an EC2 Instance </h2>
+  
+  <ol type="1">
+    
+    <li> <p> Next, we want to create an EC2 Instance. This should be straight forward but let's go though it one more time, just in case. </p> </li>
+
+<br> <br>
+    
+    <li> <p> Navigate to the AWS Management Console main page. (Log in again if prompted). Then, click services, under "Computer", click EC2. </p> <img src="https://i.imgur.com/QK7V6je.png" draggable="false"></li>
+    
+    <br> <br>
+    
+    <li> <p> Once on the EC2 Dashboard, scroll a bit down till you see "Launch Instance" and select that. </p> <img src="https://i.imgur.com/FVCdI1R.png" draggable="false"></li>
+    
+    <br> <br>
+    
+    <li> <p> Then we can choose any Amazon Machine Image (AMI) that we want to use. I personally like to use the Ubuntu AMI, so I am going to select that. </p> <img src="https://i.imgur.com/yhqWtyf.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> After pressing select, it'll ask you what instance type we want. I am going to select the t2.micro type (also due to the fact that it's free tier eligible). Click next. </p> <img src="https://i.imgur.com/LvypHUt.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> After pressing next, you can go through the "Configure Instance Details" but for this case, we do not need to make any changes. Same for the next step which is to "Add Storage". </p> <img src="https://i.imgur.com/BhmHnmQ.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/dczaeBL.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> We should be at the "Add Tags" section of the configuration. In here, we can put descriptors for the EC2 instance for us to know what the purpose of this EC2 instance is for. Click next on to "Configure Security Group". </p> <img src="https://i.imgur.com/5nkqByE.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> In the "Configure Security Group", let's make new one security group. The SSH rule should be added by default, but if not, go ahead and add the rule. Then, add a new rule. The new rule type should be HTTP. Make sure that the protocol, port range, source, and description are untouched. Click next. </p> <img src="https://i.imgur.com/F7qSwrm.png" draggable="false"> </li>
+    
+     <br> <br>
+    
+    <li> <p>After clicking next, we can review it all and make sure all the configurations are correct. Then, when you click launch, its going to prompt you asking you if we want to use an existing key pair or create a new one. Let's create a new one for this instance. Give our key pair a name and download it and let's store it on our desktop as well. Then, click "Launch Instance". </p> <img src="https://i.imgur.com/ycnU8N3.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/nsxQrTe.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/FE6HIf5.png" draggable="false">  </li>
+    
+    <br> <br>
+    
+    <li> <p>Once we click on "Launch Instance", we should be thrown back to our instances page and we should see our newly made instance running! Now, we should also name the instance just so we know what the purpose of this instance is. So click on the icon next to the blank space and give it a name. Press save and that should be done. </p> <img src="https://i.imgur.com/x7as8CB.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p>Before we leave this page, grab the Instance's Public IPv4 Address and open up a new browser (not tab), and paste it in the url section. It won't work right now but it will once we are done with this tutorial.  </p> <img src="https://i.imgur.com/fv7IolC.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/fNVXbdv.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p>We are done with making a blank EC2 instance! </p> </li>
+    
+  </ol>
+  
+  <br> <br>
+  
+  <h2 div id="SSHEC2"> SSH into the EC2 Instance </h2>
+  
+  <ol type="1">
+    
+    <li> <p> Now, here comes the fun part of it all! We have to get control of our EC2 instance and put files into it. We can refer back to blog 9 to SSH into our EC2 instance using PuTTY or we can also refer back to blog 11 to SSH into our EC2 instance using MobaXterm. Personally, I find Blog 11's method of using MobaXtermto be much easier, therefore, I am going to refer to that. However, we will still go step by step so this can become a complete one stop tutorial. </p> </li>
+    
+    <br> <br>
+    
+    <li> <p> We have created and configured our EC2 instance. We also confirmed that our instance is up and running. Now, we need to click on connect. Once in the connect page, grab the section highlighted in the picture and copy it to your clipboard.  </p> <img src="https://i.imgur.com/yFJRG88.png" draggable="false"> <br><br> <img src="https://i.imgur.com/PnDl0d1.png" draggable="false">  </li>
+
+<br> <br>
+
+    <li> <p>Once you open up MobaXterm, you will be greeted with the screenshot below. Ignore the black boxes. That was a previous test run.</p> <img src="https://i.imgur.com/mXEsbb4.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Click on New Session</p> <img src="https://i.imgur.com/LQ62rX3.png" draggable="false"> </li>
+
+<br> <br>
+
+    <li> <p>Then you will be greeted with the Session Settings menu. SSH should be selected by default. Paste the Public DNS address in the Remote host section. Select Specify Username and input "ubuntu". The port should default to port 22 but if not, go ahead and edit it. </p> <img src="https://i.imgur.com/hFaCMo1.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/PnDl0d1.png" draggable="false"> </li>
+   
+   <br> <br>
+   
+   <li> <p>Click on Advanced SSH Settings. Select "Use Private Key". When you do that, it should open this file looking item at the end of the text entry box. You can either put the file path of the .pem key in there, or you can click the file button and navigate to the .pem key. </p> <img src="https://i.imgur.com/p4uRHnB.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/FpwG5vr.png" draggable="false"> </li>
+   
+    <br> <br>
+
+    <li> <p> Press OK and wait for MobaXterm to launch you in. You should be greeted with something that looks like the screenshot below. </p> <img src="https://i.imgur.com/W62qCvj.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+  </ol>
+  
+    <br> <br>
+  
+  <h2 div id="UpEC2"> Update EC2 + Install Apache2 </h2>
+  
+  <ol type="1">
+    
+    <li> <p> Since we are now logged in to our EC2 instance, we should update everything as well as install Apache. Next, we have to change our user to the root user. We do this by typing "sudo su"</p> <img src="https://i.imgur.com/9M4DMKx.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> We should update our EC2 Instance by running the following commands in sequential order. There are going to be a lot of outputs. As long as we dont get an error, we should be good. The commands are: "sudo apt-get update", "sudo apt-get upgrade" and "sudo apt-get install apache2". </p> <img src="https://i.imgur.com/7XFK072.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> We can double check that Apache has been installed by going to our instance's Public IPv4 Address that we opened up in a new browser. Now, instead of having an error page, we are greeted with the Apache2 Default landing page! wWe are ready for the next step! </p> <img src="https://i.imgur.com/YxrAYdU.png" draggable="false"> </li>
+    
+    <br> <br>
+
+    <li> <p> Also, the terminal looks very cluttered so to clear it, type in "clear" and it will take everything away making it less of an eyesore :) </p></li>
+    
+  </ol>
+
+      <br> <br>
+  
+  <h2 div id="Launch"> Launching the HTML project into the EC2 Machine </h2>
+
+  <ol type="1">
+    
+    <li> <p> Let's get our HTML project files into our EC2 instance locally. To check where we are in the EC2 instance, we can do "pwd", which displays what directory we are in. We want to change our directory to /var/www/html. We do this by typing in "cd /var/www/html". </p> <img src="https://i.imgur.com/HYPDMnJ.png" draggable="false"> </li>
+    
+    <br> <br>
+      
+      <li> <p> We also want to see what's inside this directory. To check this, type in "ls". There should be only one file that shows up and it should be the "index.html" file. This file is just the Apache Default landing page so we don't have to worry about that. If there are any more files, simply do "sudo rm [file name]" and we're good to carry on. </p> <img src="https://i.imgur.com/o1EfW4s.png" draggable="false"> </li>
+    
+    <br> <br>
+    
+    <li> <p> Now we should copy the contents of our S3 bucket into our EC2 instance machine. Navigate to the AWS Management Console and log in. Once logged in, click services, under Storage, click S3. </p> <img src="https://i.imgur.com/oUeyy6u.png" draggable="false"> </li>
+    
+     <br> <br>
+    
+    <li> <p> Click on the name of the bucket that we made. Then click on the zip file that we uploaded. Then, locate the object URL and copy the URL. </p> <img src="https://i.imgur.com/BIGeLvr.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/Chp9Kh9.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/GpdNoEH.png" draggable="false"> </li>
+      
+    <br> <br>
+    
+    <li> <p> When you have the Object URL copied, go back to the EC2 instance terminal and type in "wget" followed with the object URL. </p> <img src="https://i.imgur.com/h4AqaAV.png" draggable="false"> <br> <br> <img src="https://i.imgur.com/diIGQsE.png" draggable="false"> </li>
+      
+    <br> <br>
+    
+    <li> <p> After that process, type in "ls" to see if any new files were added. The zipped folder in our S3 bucket should show up. </p> <img src="https://i.imgur.com/NlpHzhh.png" draggable="false"></li>
+    
+    <br> <br>
+    
+    <li> <p> Now, we want to extract the contents of the zipped file. This process is super easy since all we have to do is type in "unzip [file name]". So... "unzip Gigapet.zip". However, there might be an error saying that there is no unzip command. To fix this, run "apt install unzip" and then try again. If for some reason that still doesn't work, try "sudo apt install unzip". </p> <img src="https://i.imgur.com/e1XN6TU.png" draggable="false"></li>
+    
+    <br> <br>
+    
+    <li> <p>After unzipping the folder, the /var/www/html file directory should have all the content there. To check what is in the directory, do "ls". </p> <img src="https://i.imgur.com/wvIGU88.png" draggable="false"></li>
+      
+       <br> <br>
+
+    <li> <p> I slightly messed up in the process. The zipped folder I uploaded has the unzipped folder inside. So its a zipped folder that has an unzipped  folder inside. I want to move all the content that inside that folder into the /var/www/html directory. So I need to go into my Gigapet folder by doing "cd Gigapet", then I need to manually move its content to the /var/www/html directory. I do this by typing "mv [file name] [file directory]". To go back a directory, do "cd .."</p> <img src="https://i.imgur.com/k8R64sy.png" draggable="false"></li>
+    
+    <br> <br>
+
+    <li> <p> Now, go back to our instance's Public IPv4 Address that we opened up in a new browser and refresh the page. We should be greeted with our project now! </p> <img src="https://i.imgur.com/w2DKBn6.png" draggable="false"></li>
+    
+    </ol>
+
+<br> <br>
+
+<p> That’s all folks! Thanks for a great semester! :) </p>
+  
+
+</html> 
