@@ -1,0 +1,126 @@
+---
+layout: post
+title:  "Blog 13 (Blog 0)"
+date:   2021-02-19 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to create your own sandbox server with Metasploitable </h1>
+
+<center> <img src="https://www.wikigain.com/wp-content/uploads/2017/01/metasploit-and-metasploitable.1280x600.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p> Hello world! It is nice to see you! It has been quite a while since we last met. My last blog post was for the last day of my Fall 2020 semester at California State University, Northridge. Spring 2021 is my final semester before I graduate with my Bachelors! Anyways, it is nice to see you here again, let's get back into it. Today, I am going to walk you through how you can host a server on your own computer!
+
+<h2> Prerequisites (Set Up) </h2>
+
+ <ol type="1">
+    
+    <li> <p>Make sure your computer is powerful enough to host multiple virtual machines at once. This means also making sure that the virtual machines are given enough resources from your host computer to work efficiently.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Download <a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>. You could use another Virtual Machine Box service if you would like, but your instructions may vary. </p> </li>
+
+<br> <br> 
+
+ <li> <p>Also download <a href="https://information.rapid7.com/download-metasploitable-2017.html" target="_blank">Metasploitable</a>. The website that it leads to you may ask you for some personal information. As soon as you fill it out, the download button should appear.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Unzip the file on your computer and open Virtual Box. It should have a file named “Metasploitable.vmdk” </p> </li>
+
+<br> <br> 
+
+</ol>
+
+ <li> <p>Let’s configure it in Virtual Box now!</p> </li>
+
+<br> <br>
+
+<h2> Configure and Install Metasploitable </h2>
+
+ <ol type="1">
+    
+    <li> <p> In Virtual Box, select new. Then fill out the information it is asking for. For name, this can be anything you would like. I prefer to keep it simple and name it the same thing that the machine is. For type, this is an Linux Ubuntu based kernel so you must choose Linux. Then for the version type, choose Ubuntu (64) bit. Then click next.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Allocate some memory for your instance. I decided to leave it as the default since this is just hosting a couple of files and won't need much ram to do so. Click next until the whole setup process is done. </p> </li>
+
+<br> <br> 
+
+ <li> <p>Allocate some memory for your instance. I decided to leave it as the default since this is just hosting a couple of files and won't need much ram to do so. Click next until the whole setup process is done. </p> </li>
+<br> <br> 
+
+ <li> <p>After all this, you're almost ready to have it up and running! Click settings on the Metasploitable instance and then navigate to storage. Under storage, youll see an option that says “Controller: SATA”, click on the module under that (it should look like a hard drive).</p> </li>
+
+<br> <br> 
+
+ <li> <p>Then under the attributes section, there should be a dropdown. <b> Next to the dropdown </b> there should be a little image of a hard disk. Click on that image and click on “Choose a disk file.”  it should open the explorer. Select the “Metasploitable.vmdk” and click open.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Once that is done, exit out of the settings module and press start on the instance! </p> </li>
+
+<br> <br> 
+
+ <li> <p>It may take a while so let it do its thing. However, keep monitoring it just in case it runs into any errors. After all that, it may or may not prompt you for login credentials. Both the username and password is <b>msfadmin>/b>. </p> </li>
+
+<br> <br> 
+
+ <li> <p>You should be in your Metasploitable server instance now! Go ahead and use your basic linux ubuntu commands to check out what it automatically comes with and inspect files that are of interest to you. </p> </li>
+
+</ol>
+
+<br> <br>
+
+<h2> Open Metasploitable landing page on your host computer</h2>
+
+ <ol type="1">
+    
+    <li> <p> The whole reason as to why we are doing this is so we can access a webpage from our Metasploitable server on our host computer. Essentially mimicking what a server does.</p> </li>
+
+<br> <br> 
+
+ <li> <p>First navigate to the home directory by doing <b>cd ..</b> </p> </li>
+
+<br> <br>
+
+<li> <p> Navigate to /var/www/html by running the following command: cd /var/www/html</p> </li>
+
+<br> <br>
+
+<li> <p>Once you’re in the directory, replace or edit the “index.php” file. For now, lets keep it simple and just create a text string with your name in it. Save it and exit to the main console.</p> </li>
+
+<br> <br>
+
+<li> <p> Do ifconfig to see what IP address your Metasploitable instance has and input that IP address into your host computer. </p> </li>
+
+<br> <br>
+
+<li> <p> Now, you  should see a blank page with your name on it! This is displaying the index.html file that is on your Metasploitable instance!</p> </li>
+
+</ol>
+
+<br> <br>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+</html> 
+
