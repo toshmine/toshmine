@@ -80,7 +80,7 @@ color:white;
 
 <br> <br> 
 
- <li> <p>It may take a while so let it do its thing. However, keep monitoring it just in case it runs into any errors. After all that, it may or may not prompt you for login credentials. Both the username and password is <b>msfadmin>/b>. </p> </li>
+ <li> <p>It may take a while so let it do its thing. However, keep monitoring it just in case it runs into any errors. After all that, it may or may not prompt you for login credentials. Both the username and password is <b>msfadmin </b>. </p> </li>
 
 <br> <br> 
 
