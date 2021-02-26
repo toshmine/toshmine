@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "Blog 14 (Blog 1)"
+date:   2021-02-26 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1> How to install and configure Kali Linux</h1>
+
+<center> <img src="https://i.ytimg.com/vi/tWzM1MZOhp4/maxresdefault.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! Welcome back, it’s nice to see you again. Let’s install and configure Kali Linux. Does this sound familiar? It was showcased in USA Network’s Mr. Robot drama series! Why would we do this specifically you ask? Remember when we installed and configured Metasploitable in Blog 13 (Blog 0). We are going to use our Linux Virtual Machine to “hack” into our Metasploitable instance and change the contents, all from our Kali instance! </p>
+
+<br> <br>
+<p> Unfortunately, in this blog, we will not be talking about how to hack into our Metasploitable instance. This blog is to install and configure Kali Linux so that by next week, we can hack in! Plus, I have to entice you somehow to come back to my blogs :) </p>
+
+<br> <br>
+
+<h2> Prerequisites (Set Up) </h2>
+
+ <ol type="1">
+    
+    <li> <p>Make sure your computer is powerful enough to host multiple virtual machines at once. This means also making sure that the virtual machines are given enough resources from your host computer to work efficiently.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Download <a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>. You could use another Virtual Machine Box service if you would like, but your instructions may vary. </p> </li>
+
+<br> <br> 
+
+ <li> <p>Also download <a href="https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/" target="_blank">Kali Linux</a>.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Unzip the file on your computer and open Virtual Box. It should have a file named “kali-linux-2017.3-amd64” </p> </li>
+
+<br> <br> 
+
+ <li> <p>Let’s configure it in Virtual Box now!</p> </li>
+
+</ol>
+
+<br> <br>
+
+<h2> Configure and Install Kali Linux </h2>
+
+ <ol type="1">
+    
+    <li> <p> In Virtual Box, select new. Then fill out the information it is asking for. For name, this can be anything you would like. I prefer to keep it simple and name it the same thing that the machine is. For type, this is an Linux Ubuntu based kernel so you must choose Linux. Then for the version type, choose Ubuntu (64) bit. Then click next.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Allocate some memory for your instance. You should give a good amount of memory since we will be using this to do a lot of the work, and a slow work space will do nothing but frustrate you. Same apply for storage, give it a good amount so it can actually hold any files you may want on there. Click next until the whole setup process is done.  </p> </li>
+
+<br> <br> 
+
+<li> <p>Once that is done, exit out of the settings module and press start on the instance! </p> </li>
+
+<br> <br> 
+
+ <li> <p>It is going to ask you what kind of installation you would like. Choose “Live (amd64)” and let the installer do its thing. It may take a while so let it do its thing. However, keep monitoring it just in case it runs into any errors. </p> </li>
+
+<br> <br> 
+
+<li> <p>It may or may not ask you for login credentials. If in the case it does, the username should be root, and the password should be toor. </p> </li>
+
+<br> <br> 
+
+ <li> <p>You should be in your Kali Linux instance now! Go ahead check out what it automatically comes with and inspect files that are of interest to you. </p> </li>
+
+</ol>
+
+<br> <br>
+
+<h2> Access Metasploitable landing page though Kali Linux</h2>
+
+ <ol type="1">
+    
+<li> <p>Go back to VirtualBox and start the Metasploitable instance. If it asks for login credentials, both the username and password is <b>msfadmin>/b>. </p> </li>
+<br> <br>
+
+    <li> <p> In the Metasploitable instance, do ifconfig to see what IP address your Metasploitable instance has and input that IP address into your Kali Linux virtual machine. </p> </li>
+
+<br> <br>
+
+<li> <p> Now, you  should see a blank page with your name on it! This is displaying the index.html file that is on your Metasploitable instance!</p> </li>
+
+</ol>
+
+<br> <br>
+
+<p> That’s all folks! Tune in next week to learn how to hack into the Metasploitable instance from our Kali Linux machine :) </p>
+
+</html> 
+
