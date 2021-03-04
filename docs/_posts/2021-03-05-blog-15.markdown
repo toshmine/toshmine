@@ -1,0 +1,138 @@
+---
+layout: post
+title:  "Blog 15 (Blog 2)"
+date:   2021-03-05 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1>Hack Metasploitable thorough Kali Linux</h1>
+
+<center> <img src="https://i.ytimg.com/vi/psWPoNnBrQw/maxresdefault.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! Welcome back, it’s nice to see you again. For the past two weeks, we configured and installed two virtual machines. Last week,  Blog 14 (Blog 1), we installed Kali Linux. I also mentioned why we are doing this. So,. let's get to it and learn how to hack into our Metasploitable instance from Kali Linux! </p>
+
+<br> <br>
+
+
+<p>If you are new here or need to be caught up as to what is going on, please refer back to <a href="https://toshmine.github.io/git/senior-design/2021/02/19/blog-13.html" target="_blank">Blog 13 (Blog 0)</a> or <a href="https://toshmine.github.io/git/senior-design/2021/02/26/blog-14.html" target="_blank">Blog 14 (Blog 1)</a> </p>
+
+<h2> Prerequisites (Set Up) </h2>
+
+ <ol type="1">
+    
+    <li> <p>Start both the Metasploitable and Kali Linux virtual machine instances and put them side by side. </p> </li>
+
+<br> <br> 
+
+ <li> <p>Let both instances start up. It may have you do the installation process again but don't worry, it’s a lot shorter of a wait time and it doesn't really affect the machine. However, keep monitoring it just in case it runs into any errors.</p> </li>
+
+<br> <br>
+
+ <li> <p> After all that, it may or may not prompt you for login credentials. For Metasploitable, Both the username and password is <b>msfadmin>/b>. For Kali Linux, the username is root and the password is toor.</p> </li>
+
+</ol>
+
+<br> <br>
+
+<h2>Armitage</h2>
+
+ <ol type="1">
+    
+    <li> <p> What is Armitage? This is the program that we are going to use so we can hack into the servers. In this case, the server is our Metasploitable instance.</p> </li>
+
+<br> <br> 
+
+ <li> <p>On Kali Linux, open terminal. It should be on the balck icon on dock. It’s default placement is under the Firefox application. </p> </li>
+
+<br> <br> 
+
+ <li> <p>On Kali Linux, open terminal. It should be on the balck icon on dock. It’s default placement is under the Firefox application. Keep in mind that we are using Kali Linux. We only have Metasploitable running in the background since that is our server.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Once the terminal is open, run the following commands: systemctl start postgresql, msfdb init, and armitage. That last command should open the Armitage application.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Once that is done, its going to ask you for a Host, Port, User, and Password. Leave it just the way it is. For reference.. Host:127.0.0.1, Port: 55553, User: msf, and Pass: (it should be four **** but it doesn't display the actual password.)</p> </li>
+
+<br> <br> 
+
+ <li> <p>Press okay and it should start thinking. It may say ““connection refused” or some error along those lines. Don't let it fool you, it'll do that, so just give it some time.</p> </li>
+
+<br> <br> 
+
+  <li> <p> Once Armitage opens, it's going to ask for the attack computer IP. Input the IP address of the Metasploitable instance (use command ifconfig to find this) </p> </li>
+
+<br> <br> 
+
+ <li> <p>Click Hosts and then put the IP range of the Metasploitable instance.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Then click Attacks on the toolbar and click “Find Attacks”. Let it run. </p> </li>
+
+<br> <br> 
+
+ <li> <p>Left click on the computer (it should have a penguin in the monitor and have the IP address of the Metasploitable instance under it)</p> </li>
+
+<br> <br> 
+
+ <li> <p>Select Attack and keep trying the different attacks until you get one that gives the exploit mod. For myself, it was attack --> ftp --> vsftpd_234_backdooor.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Once that happens, when you right click on the monitor, a new option will show up and it will say “Shell 1”. Then click “Interact”.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Change the directory to the one where the “index.html” page. For me, it is the /var/www/ directory. (cd /var/www/)</p> </li>
+
+<br> <br> 
+
+ <li> <p>Once you’ve found the index.html, remove it. (rm -r index.html)</p> </li>
+
+<br><br>
+
+<li> <p>Then, make a new index.html page in your Kali instance.</p> </li>
+
+<br> <br> 
+
+  <li> <p>Right click on the penguin monitor, click Shell 1, then click Upload. This will bring the GUI, which makes it easier to upload. Upload the new index.html file.</p> </li>
+
+<br> <br> 
+
+ <li> <p>Change the permissions on the new index.html file. (chmod 777 index.html)</p> </li>
+
+<br> <br> 
+
+ <li> <p>Navigate to the browser and type in the Metasploitable IP address. To find the (IP Address, type ifconfig) </p> </li>
+
+<br> <br> 
+
+<li> <p>Now, you should see the new index.html site that you made in Kali Linux! Congrats, you have successfully hacked into your own server.</p> </li>
+
+</ol>
+
+<br> <br>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+</html>
+

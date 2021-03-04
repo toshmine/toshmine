@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Blog 16 (Blog 3)"
+date:   2021-03-12 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1>IoT Botnets</h1>
+
+<center> <img src="https://www.nist.gov/sites/default/files/images/2020/05/29/shutterstock_520084003.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! Today, I would like to talk about what an IoT Botnet is. I recently learned about this topic and it was my biggest takeaway from this week. You can bet I am going to tell everyone and anyone about them! </p>
+
+<br> <br>
+
+<p> First, what is IoT and what does it stand for? For my anime fans, I’ll tell you for sure that AoT and IoT have nothing in common. IoT stands for Internet of Things. It essentially just groups together computing devices that can connect to the internet and send and receive data. Botnet is a series of internet-connected systems / computers that run one or more bots to carry out the owner's wishes. An IoT Botnet is a group of hacked computers or internet connected devices that work together to accomplish an illegal or unlawful task. </p>
+
+<br> <br>
+
+<p> IoT Botnets can be coded in C++, C#, Delphi, Python, or VB.Net. Botnets are made by infecting connected devices with malware and then managing them using a command and control server. When a computer on a network has been hacked, all vulnerable computers on that network are at risk of becoming infected. The attacker tries to inject their IoT Botnet into as many programs as they can. They tend to infect popular programs so people download them without ever realizing what's actually happening.  Once the attacker has successfully injected their seed  into peoples computers, they can deploy the attack whenever they want. </p>
+
+<br> <br>
+
+<p> IoT Botnets are commonly used to perform a Distributed Denial of Service attack (also known as a DDoS attack). Put simply, a DDoS attack is overloading a website’s server with many requests, more than the server can handle, resulting in the server being down which leads to the website being down as well. Adding on to that, IoT Botnets could also be used to cryptomine. Cryptocurrency has been the hot topic for the past couple of months during our year long quarantine. Scalpers could use IoT Botnets to purchase and exchange currency to increase the personal value of the cryptocurrency of choice. </p>
+
+<br> <br>
+
+<h3>There are three Botnet types: </h3> 
+
+ <ol type="1">
+    
+<li> <p> <i> <b>Traditional Botnet</b> </i>: A collection of compromised zombie servers / computers that have run only malware. It allows an attacker to monitor them and execute tasks on their behalf. </p> </li>
+<img src="https://linuxsecurityblog.files.wordpress.com/2016/01/bot.jpg" draggable="false" height="250" width="450">
+
+<li> <p> <i> <b>IoT Botnet</b></i>:: A collection of compromised devices that have been unknowingly infected. It can be anything as long as it is connected to the internet. Typically made to spread malware to other devices to build more of a compromised community. </p> </li>
+<img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9cfkq6be504330igjqqunssbk6-20180301121051.Medi.jpeg" draggable="false" height="250" width="450">   
+
+<li> <p> <i> <b>IoT Spider Botnet</b></i>: A Spider Botnet is a program that looks for holes in peoples security to infect. Botnets are scattered through the web and exist just to find exploits on the internet. </p> </li>
+   <img src="https://i.ytimg.com/vi/hRhjSZVJ9Q4/maxresdefault.jpg" draggable="false" height="250" width="450">
+
+</ol>
+
+<br> <br>
+
+<p> You have got to admit, it is equally as scary as it is cool. I recently found this topic and it sparked my interest in the topic. It is in relation to making sure your online services are protected. The only way to keep your online services as protected as can be, is to learn about common exploits and figure out ways as to how to avoid them. </p>
+
+<br> <br>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+</html>
+
