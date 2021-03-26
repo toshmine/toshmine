@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Blog 16 (Blog 3)"
+date:   2021-03-26 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1>User Interface Bootstrap</h1>
+
+<center> <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-illustration.png" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! I would like to talk about some front end web design this week. Front end has always appealed to me due to the fact that it is all about aesthetics and also you can see your code instantly take place.</p>
+
+<br> <br>
+
+<p>I will expand on this in a little bit but Bootstrap is a free, open source front end framework that allows developers to create structured and responsive web pages.</p>
+
+<p>My partners and I were assigned a task to create a static website that links to our other projects that we have worked on. Essentially, a landing page for all our projects. We wanted to make the website look professional and we did so with a lot of CSS help as well. We finished the assignment and my partners and I were content with the end result. </p>
+
+<br> <br>
+
+<p>One of the problems we realized moments after is that the website looks different on different devices. Duh, that's common sense right? What I mean is that we created the webpage given one screen resolution in mid, so if you accessed that website on another device with a different screen resolution, everything would be out of place and sometimes, not even in view. </p>
+
+<br> <br>
+
+<p>That's when we found out about Bootstrap. It is a JavaScript addon that works magic. It makes sure that the webpage Bootstrap is integrated with is responsive. A responsive webpage simply means that a page will adjust to the size of a user’s screen and keep a similar layout. </p>
+
+<br> <br>
+
+<p>In order to use Bootstrap in your project, you have the option to either download the source locally, or import it from the web using a CDN. Bootstrap allows developers to utilize pre-built classes that make whatever element it is tied to responsive. These pre-built classes are what is known as the Grid System. The Grid System will allow us to define a structure/layout for our webpage.</p>
+<img src="https://i.imgur.com/2v5prQJ.png" draggable="false" height="250" width="450">
+
+<br> <br>
+
+<p>With the Grid System in place, we should view a page as a series of Rows and Columns. The developer can have as many rows as you want but one row can have a maximum of 12 columns. How the developer chooses to allocate columns all comes down to the vision and aesthetic they have in mind.</p>
+  <img src="https://csharpcorner.azureedge.net/article/bootstrap-grid-system/Images/1.png" draggable="false" height="250" width="450">
+
+<br> <br>
+
+<p> That’s all folks! Tune in next week :) </p>
+
+</html>
+
