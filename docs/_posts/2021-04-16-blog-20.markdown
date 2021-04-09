@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Blog 19 (Blog 6)"
+date:   2021-04-16 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style> 
+
+<h1>Personally recommended dependency packages</h1>
+
+<center> <img src="https://miro.medium.com/max/1200/1*6AgWDloI8H3Mnwzg4UAUBA.png" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! I have a group project that requires me to create a website that the public has access to. My group and I have our ideas ready and we were able to create the basic front end user interface! When looking for dependency packages for the website, I had to look around and compare a lot of different ones at once and find the ones that work best and most efficiency for my group and I. Below are my personal recommendations as to what is best. Hopefully this list is helpful for your future endeavors! </p>
+
+<br> <br>
+
+<h3>Recommended dependency packages: </h3> 
+
+ <ol type="1">
+    
+<li> <p> <i> <b>Express</b> </i>: Used to provide small, robust tooling for HTTP servers, without needing to use specific template engines or object-relational mapping. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Validator</b></i>: It verifies the specified, required fields that people would set up on their page. This ensures that the user entered a valid email and password when logging in. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Mongoose</b></i>: I wanted to develop the site’s network connection using an asynchronous environment to improve the performance and responsiveness. Mongoose does this due to the fact that it supports promises and callbacks. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>MongoDB</b></i>: Document database which allows us to store data in JSON-like documents.JSON documents support arrays and nested objects as values, and they’re capable of handling flexible and dynamic schemas. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Cookie-Parser</b></i>: Works in conjunction with Express so that we can use cookies. It is a middleware that parses cookies attached to the client request object. In other words, this package is used to create cookies to improve navigation on our website.</p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Bcrypt</b></i>:adds security to each account by hashing every password with a salt.</p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>EJS</b></i>: A simple templating language that lets us generate HTML markup with plain JavaScript. This lets us freely organize the way we want to make our page and debug our errors quickly. </p> </li>
+
+<br><br>
+<li> <p> <i> <b>JWT</b></i>: A JSON web token, defines a compact and self-contained way to securely transmit information between various parties such as a JSON object. </p> </li>
+
+<br><br>
+
+</ol>
+
+<br>
+
+<p> I hope my recommendations were actually helpful! That’s all folks! Tune in next week :) </p>
+
+</html>
+

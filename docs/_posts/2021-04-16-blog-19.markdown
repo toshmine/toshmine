@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Blog 19 (Blog 6)"
+date:   2021-04-09 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style>
+
+<h1>What is targeted advertising?</h1>
+
+<center> <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-illustration.png" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! There are lots of times where I learn something that is my biggest takeaway for the week that I didn't learn from school. This week, I was really interested in targeted advertising. We all have most likely experienced this before. Have you ever got ads for things that you were thinking about or even looked up? I remember once, I was getting introduced to mechanical keyboards, and I was sent a YouTube video from a friend. Not even a couple of hours later, I got recommendations for mechanical keyboards on Amazon.</p>
+
+
+<br> <br>
+<p>There is a lot of controversy if this is ethically or even morally right. Whether or not it is or isn't, there is no denying that it works and it works well. We are reality good about ignoring ads, but ads are made to showcase something relevant for the consumers to buy. Advertisers are able to see what the user reads or sees while browsing online. Then they are able to use that information to see what the user would possibly be interested in buying.</p>  
+
+<br> <br>
+
+<p>Let’s use a different example to showcase how this works. In March 2020, America was placed on a “stay at home” lockdown order to quarantine to beat the Coronavirus pandemic. With everyone not knowing what to do with their extended time at home, a lot of people decided to pick up the Nintendo Switch console. As an example, let's say that Alice is someone who is <b> thinking </b> to purchase a Switch. She watches YouTube videos on Switch reviews and if its worth it. After 10 minutes of research, Alice has to buy something unrelated from Amazon. She goes on the site, and the first thing that pops up is Switch accessories. How is that possible? She didn't look up Nintendo Switches on Amazon. She looked at video reviews on YouTube, a completely different website.</p> 
+
+<br> <br>
+
+<p>When Alice was watching the review videos, her computer created files called <i> cookies </i>. The cookies have information about Alice's activity. When Alice visited Amazon, automated advertisements read her computer's cookies and generated ads for items related to her YouTube consumer visits.</p> 
+
+<br> <br>
+
+<p>There are times where it becomes flat out scary but also interesting. Alice was looking for Jordan 1 shoes on StockX, which is a sneaker resell market place. She was looking for them on her computer. Alice decides to check what her friends are up to on Instagram on her phone. There is a high possibility she gets an ad for the GOAT application, which is StockX’s competitor. Alice didn't look up anything related to shoes on her phone, just her computer, so how did she get ads for that on two different devices?</p>
+
+<br> <br>
+
+<p>Advertisers are able to make educated guesses about who you are based on your location, browsing habits, and the sites Alice has signed up for. If Alice is on an account based website, it’ll use her email address to collect the cookies and give her targeted ads across other platforms with the same email address linked.</p>
+
+<br> <br>
+
+<p>The advertisers say that they use this data just to market suggested items to the consumer, and don't actually keep any sensitive information. This could be a lie due to the fact we don't actually know what they keep and don't keep. This also is not illegal because it is not being used for malicious use. It is all public information that users are putting out.</p> 
+
+<br> <br>
+
+<p>There are best practices to reduce or even eliminate how much companies know about users. The best way to control what information companies have, is to always browse the internet with caution. No matter how secure it feels, always assume that your online presence is never private. </p> 
+
+<br> <br>
+
+<h3>Best ways to prevent advertisers to track your information is by:</h3> 
+
+ <ul>
+    
+<li> <p>Going to the privacy setting on your web browser and clearing the  cookies setting the option to make websites ask to not track you.</p> </li>
+
+<br>
+
+<li> <p>Out-Out web services (such as  <a href="https://optout.aboutads.info/?c=2&lang=EN" target="_blank">About Ads</a>) and request that ad agencies stop using and tracking your information. It won't completely get rid of targeted ads but it’ll help reduce them.</p> </li>
+
+<br>
+
+<li> <p>Be cautious of the amount of information that you release online. Weather that be personal information or general information. The less the computers know about you, the more privacy you have.</p> </li>
+
+<br>
+
+<li> <p>Use private browsing as much as you can. Most browsers come default with a private browsing option., When using private browsing, all the data gets purged upon exit.</p> </li>
+
+</ul>
+
+<br> <br>
+
+<p> In my option, this is terrifying that companies know so much about people. This is a very smart marketing tactic since advertising is abouvly to showcase products that consumers want. It also is super cool that companies are able to make sure that the ads that users get are actually personalized relevant ads. That’s all folks! Tune in next week :) </p>
+
+</html>
+
