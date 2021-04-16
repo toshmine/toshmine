@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Blog 21 (Blog 8)"
+date:   2021-04-23 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style> 
+
+<h1>Security Onion</h1>
+
+<center> <img src="https://pbs.twimg.com/profile_images/1285648758525526017/gQFtcr9m.jpg" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! I am growing an interest in CyberSecurity and this week, I found out about something called Security Onion! No, it is not the type of onion that we typically eat. </p>
+
+<br>
+
+<p> This is a Linuix based operating system that is used for security. It is typically used for intrusion detection (IDS), network security monitoring (NSM), and log management. It is  based on Ubuntu and comes loaded with security tools such as, Snorby, ELSA, Xplico, Network Miner, and more. This operating system allows a user to keep track of security updates on your network. It's easy enough to run without issues in small environments, and it helps professional users to deploy distributed applications for use in network business environments. </p>
+  
+  <br>
+
+<p>Now that I hope I have grabbed your interest, here are just some things that Security Onion comes installed with and their purpose! </p>
+
+<h3>Security Onion Layers: </h3> 
+
+ <ol type="1">
+    
+<li> <p> <i> <b>Snort/Suricata</b> </i>: Snort and Suricata are NIDS Engine. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Snort</b></i>: Snort is an open source network intrusion detection and prevention system (IDS/IPS). </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Suricata</b></i>: Suricata is a high performance Network IDS/IPS and network Security Monitoring system. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>IDS Engines</b></i>: Are highly scalable. It has protocol identification, file identification, MD5 checksums and file extraction. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Snorby</b></i>: Web frontend of network security’s monitoring. Does this by metrics and reports, classifications, full packet, custom setting, and hotkeys. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>Bro</b></i>: Bro is a powerful network analysis framework that has a high-level semantic analysis at the application, site-specific monitoring policies Sguil.It is also a security management analysis console. It's an excellent tool for event interpretation, correlation, and evaluation. </p> </li>
+
+<br><br>
+
+<li> <p> <i> <b>ELSA</b></i>: System log-NG, MySQL, and Sphinx full-text search are used in ELSA. It is a consolidated system log interface. It offers a completely asynchronous browser-based query interface that normalizes logs and allows searching for random strings across billions of them as simple as searching the web. It also has tools for granting log browsing rights, as well as email-based notifications, scheduled requests, and graphing.</p> </li>
+
+<br><br>
+
+</ol>
+
+<p> That's all folks! Tune in next week! :) </p>
+

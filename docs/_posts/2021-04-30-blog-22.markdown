@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Blog 22 (Blog 9)"
+date:   2021-04-30 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style> 
+
+<h1>Installing Security Onion</h1>
+
+<center> <img src="https://1.bp.blogspot.com/-vWlvq2QeOrU/X-H2ShTGSoI/AAAAAAAAG30/gpLQpFDvIsQ0fQw2jbl9uDx4_msALZMGACLcBGAsYHQ/s621/Screen%2BShot%2B2020-12-22%2Bat%2B8.23.20%2BAM.png" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! Last week I talked about what Security Onion is and what it is composed of. This week, I would to help install Security Onion so we can mess around with it and see it work in action.</p>
+
+Lets first download the <a href="https://blog.securityonion.net/">Security Onion ISO</a>. Once the download is complete, you have one of two options; You can either download the operating system on your computer natively, or you can download the operating system virtually on your computer via VirtualBox or VMWare. I personally recommend VirtualVBox due to the fact that this is all testing to learn. If something goes wrong, you can always close out the virtual machine and start over. 
+
+ <ul>
+    
+<li> <p>When Click Install security Onion 12.4. Then Preparing to Install and given two checkbox true values.</p> </li>
+
+<br>
+
+<li> <p>The installer will then prompt you on if you would want to partition the harddrive. If you are doing this in a virtual machine environment, this is no issue to you since you can determine how  much space you want to give the operating system..</p> </li>
+
+<br>
+
+<li> <p>The installer will now also prompt you for a Given Username and Password of the system. No need to select encrypted my home folder and click Continue.</p> </li>
+
+<br>
+
+<li> <p>When the installation has been successfully completed, the system will prompt you for a system reboot.</p> </li>
+
+</ul>
+
+<br>
+
+<p> Once the reboot completes, you are good to go! That's all folks! Tune in next time :) .</p>
+
