@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Blog 23 (Blog 10)"
+date:   2021-05-07 09:09:09 -0700
+categories: git Senior-Design
+---
+
+<html>
+<style>
+
+body {
+background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-size: cover;
+background-color:#C0C0C0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p {
+color:white;
+}
+
+</style> 
+
+<h1>Intrusion Detection and Prevention System (IDPS) with Security Onion</h1>
+
+<center> <img src="https://1.bp.blogspot.com/-dQW26-FBoTQ/XNyWswqqIqI/AAAAAAAAFkA/qzVY-lMMZYcwc3Qj3xRbdiQDmOCfKXvhQCLcBGAs/s1600/15-desktop-no-prompt.PNG" draggable="false" height="500" width="900"> </center> 
+
+<br> 
+
+<p>Hello world! Last week, we installed Security Onion. This week, I would like to showcase how best to use Security Onion.</p>
+
+<br><br>
+
+<p> Click on the SGuil Desktop icon to open SGuil. Then When prompted, select "all interfaces" including OSSec. OSSec is a free, open-source host-based intrusion detection system. It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response.Sguil monioters the events by monitoring the network that OSSec is operating on. </p>
+
+<br><br>
+
+<p>In here, we can see how many real time and exalted events show up. This is information that is beneficial. There is also an event log of SGui. The name of the user that was added to the system is Elasticsearch. You might run into an error about enp0s3 entering promiscuous mode. As cool as that might cool, we should know what that error means. The error about enp0s3 entering promiscuous mode means that it will accept all the traffic it comes. The device enp0s3 on this system is the network ethernet interface controller.</p>
+
+<br><br>
+
+<p>Now, let's test out what we can learn from using Wireshark! Open Wireshark inside Security Onion. Do not start a capture on an interface. Instead, open the capture /opt/samples/ipfragment-attack.pcap. The moment the capture is opened, Wireshark gives an error. “The capture file appears to be damaged or corrupt. (pcap: File has 741092396-byte packet, bigger than maximum of 262144)”. Let's leave that aside for now. We can see the most recent capture and deduct information from there.</p>
+
+<br><br>
+
+<p>Within the capture, the source is the attacker and the destination is the victim. The attacker sends 3287 packet fragments to the victim. The first 248 packet fragments that were sent were read by Wireshark. The remaining 3.039 were “malformed packets”. This means that Wireshark could not read those packets, which gives the error prompted above. When you examine one of the packet fragments, you can find out that the inner protocol is ICMP. It also comes attached with a time to live (TTL) and in this case, it is 61. This means that this specific packet will hop 61 times between routers before it dies..</p>
+
+<br><br>
+
+<p> That's all folks! Tune in next time :) .</p>
+
