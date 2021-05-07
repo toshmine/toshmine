@@ -45,5 +45,4 @@ color:white;
 
 <br><br>
 
-<p> That's all folks! Tune in next time :) .</p>
-
+<p> These are just a few commands that I have found that actually taught me a good amount. There are many more out there and I hope these blogs have sparked your interests. That's all folks! Thank you for sticking with me to the end of the semester / academic year :) ! </p>
